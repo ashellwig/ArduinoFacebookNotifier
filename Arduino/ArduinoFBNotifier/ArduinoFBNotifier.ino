@@ -78,7 +78,7 @@ void BlinkMSGS(){
     if (millis() >= MSGSPINCHANGE) {
       MSGSPINSTATE = !(MSGSPINSTATE);
       MSGSPINCHANGE  += (MSGSPINDELAY/NBRMSGS);
-      digitalWrite(MSGSPIN, MSGSPINSTATE
+      digitalWrite(MSGSPIN, MSGSPINSTATE);
    }
   }else
       digitalWrite(MSGSPIN, LOW);
